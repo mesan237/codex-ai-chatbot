@@ -88,7 +88,7 @@ const handleSubmit = async(e) => {
     })
   };
   
-  const response = await fetch('http://localhost:5000/', options);
+  const response = await fetch('https://codex-chatbot-kc9t.onrender.com/', options);
 
   clearInterval(loadInterval)
   messageDiv.innerHTML=''

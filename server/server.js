@@ -9,7 +9,7 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-console.log(process.env.OPENAI_API_KEY)
+// console.log(process.env.OPENAI_API_KEY)
 const openai = new OpenAIApi(configuration);
 
 const app = express()
@@ -46,4 +46,4 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000/'))
+app.listen(5000, () => console.log('AI server started on https://codex-chatbot-kc9t.onrender.com/'))
